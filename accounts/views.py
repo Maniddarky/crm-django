@@ -171,6 +171,3 @@ def deleteOrder(request, pk):
 
 	context = {'item':order}
 	return render(request, 'accounts/delete.html', context)
-
-''' admin:Manikandan
-    password:7.12.1998david'''
