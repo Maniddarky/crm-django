@@ -156,6 +156,7 @@ EMAIL_HOST_USER = 'mkd4146956@gmail.com'
 EMAIL_HOST_PASSWORD = '7.12.1998mani'
 
 #aws-s3
+'''
 AWS_ACCESS_KEY_ID = 'AKIA4NBA2SVSNT4RRNCS'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'manikandan-bucket'
@@ -164,6 +165,7 @@ AWS_DEFAULT_ACL = None
 AWS_S3_REGION_NAME = 'ap-south-1'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+'''
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
