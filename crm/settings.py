@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     
     'django_filters',
 
-    #'storages',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -93,10 +93,10 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'demo_1',
-        'USER':'Manikandan',
-        'PASSWORD':'7.12.1998mani',
-        'HOST':'database-1.cwrmbmvtnkg3.ap-south-1.rds.amazonaws.com',
+        'NAME': 'name of your database',
+        'USER':'username of your database',
+        'PASSWORD':'database password',
+        'HOST':'your aws rds database instance endpoint',
         'PORT':'5432'
     }
 }
@@ -151,17 +151,17 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'mkd4146956@gmail.com'
-EMAIL_HOST_PASSWORD = '7.12.1998mani'
+EMAIL_HOST_USER = 'your email'
+EMAIL_HOST_PASSWORD = 'your email pasword'
 
 #aws-s3
 '''
-AWS_ACCESS_KEY_ID = 'AKIA4NBA2SVSNT4RRNCS'
-AWS_SECRET_ACCESS_KEY = 'z45sT3rZS1+zgBWDIi9Syo5geBQaZp9z+tmrZmwT'
-AWS_STORAGE_BUCKET_NAME = 'manikandan-bucket'
+AWS_ACCESS_KEY_ID = '*******'
+AWS_SECRET_ACCESS_KEY = '********'
+AWS_STORAGE_BUCKET_NAME = 'name of your s3 bucket'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
-AWS_S3_REGION_NAME = 'ap-south-1'
+AWS_S3_REGION_NAME = 'your aws region'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 '''
